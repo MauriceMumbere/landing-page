@@ -3,15 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
         <title>Document</title>
     </head>
     <body>
-        <header>
-            <div>
+        <header class="header container">
+            <div class="header__logo">
                 <p>Header Logo</p>
             </div>
             <nav>
-                <ul>
+                <ul class="header__menu">
                     <li><a href="#">Link one</a></li>
                     <li><a href="#">Link two</a></li>
                     <li><a href="#">Link three</a></li>
@@ -19,9 +20,29 @@
             </nav>
         </header>
         <main>
-            <section>
+            <section class="hero container">
+                <div class="hero__content">
+                    <div>
+                        <h1>This website is awesome</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quibusdam earum, debitis atque repellat
+                            eveniet esse Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <div>
+                            <button>Sign up</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="books.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+            <section class="container">
                 <div>
-                    <h2>Some random information.</h2>
+                    <div>
+                        <h2>Some random information.</h2>
+                    </div>
                     <div>
                         <div>
                             <div>
@@ -78,7 +99,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <div class="container">
                 <div>
                     <blockquote>
                         <p>
@@ -92,8 +113,8 @@
                         <p>-Thor, <cite>God of Thunder</cite></p>
                     </div>
                 </div>
-            </section>
-            <section>
+            </div>
+            <div class="container">
                 <div>
                     <div>
                         <h2>Call to action! it's time!</h2>
@@ -104,8 +125,10 @@
                     </div>
                     <div></div>
                 </div>
-            </section>
+            </div>
         </main>
-        <footer>Copyright &copy; The Odin Project 2024</footer>
+        <footer class="footer container">
+            Copyright &copy; The Odin Project 2024
+        </footer>
     </body>
 </html>
